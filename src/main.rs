@@ -31,7 +31,6 @@ fn main() {
         let mut sha1 = Sha1::new();
         sha1.update(word.as_bytes());
         let hash_result = sha1.finalize();
-        println!("{:?}",hash_reslt);
         let hash_result_hex = hex::encode(hash_result);
 
         if hash_result_hex == hash {
